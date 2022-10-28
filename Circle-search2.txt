@@ -1,0 +1,29 @@
+Circle-search
+
+Описание:
+	Поиск средств размещений по окружности
+	Проверка недопустимых значений
+
+Входные параметры:
+	latitude = -91 или 91
+	longitude = -181 или 181
+	radius = 0 или 30001
+	since = qwerty
+	count = 501
+
+Ожидаемый результат:
+	Отображение ошибки с уведомлением `IncorrectRequest`
+
+Фактический результат:
+	curl -X 'GET' \
+  'https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=91&longitude=47.8772&radius=10000&count=500' \
+  -H 'accept: application/json' \
+  -H 'X-API-KEY: 47306034-78fc-4767-bfd9-25e78825b985'
+  
+  Ответ:
+  Error: response status is 500
+  Пустое тело ответа.
+
+Вывод:
+	При введении недопустимых значениях параметров latitude или longitude или radius, запрос отображает ошибку 500, 
+	вместо которой должно отображаться корректное уведомление об ошибке.

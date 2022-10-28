@@ -1,0 +1,26 @@
+Countries Region
+
+Описание:
+	Получить список всех регионов страны
+	Проверка ответа при отпралении пустого параметра countryCode
+
+Входные параметры:
+	countryCode =
+
+Ожидаемый результат:
+	Отображение ошибки с уведомлением `IncorrectRequest`
+
+Фактический результат:
+	Error: response status is 400
+	{
+		"errors": [
+			{
+				"code": "IncorrectRequest",
+				"message": "Country: :countryCode is invalid"
+			}
+		]
+	}
+  
+Вывод:
+	Параметр countryCode не может быть пустым.
+	Запрос отрабатывает успешно.

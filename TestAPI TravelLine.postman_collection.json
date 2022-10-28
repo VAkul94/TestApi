@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "f34f792d-02b6-4c38-8b75-285003d8262c",
+		"name": "TestAPI TravelLine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12951254"
+	},
+	"item": [
+		{
+			"name": "Circle-search",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-API-KEY",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "47306034-78fc-4767-bfd9-25e78825b985",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/properties/circle-search?latitude=56.637029&longitude=47.8772&radius=10000&since=keys&count=500",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"properties",
+						"circle-search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "56.637029",
+							"description": "Географическая широта центра окружности [ -90 .. 90 ]"
+						},
+						{
+							"key": "longitude",
+							"value": "47.8772",
+							"description": "Географическая долгота центра окружности [ -180 .. 180 ]"
+						},
+						{
+							"key": "radius",
+							"value": "10000",
+							"description": "Радиус в метрах [ 1 .. 30 000 ] - int"
+						},
+						{
+							"key": "since",
+							"value": "keys",
+							"description": "Ключ для продолжения просмотра с определенного места"
+						},
+						{
+							"key": "count",
+							"value": "500",
+							"description": "Количество элементов в ответе. Максимальное число элементов - 500 (значение по умолчанию)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Countries properties",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-API-KEY",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "47306034-78fc-4767-bfd9-25e78825b985",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/countries/:countryCode/properties?count=500&since=keys",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"countries",
+						":countryCode",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "countryCode",
+							"value": "RUS",
+							"description": "* Трехбуквенный идентификатор страны",
+							"disabled": true
+						},
+						{
+							"key": "count",
+							"value": "500",
+							"description": "Количество элементов в ответе. Максимальное число элементов - 500 (значение по умолчанию)"
+						},
+						{
+							"key": "since",
+							"value": "keys"
+						}
+					],
+					"variable": [
+						{
+							"key": "countryCode",
+							"value": "UKR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RegionId properties",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-API-KEY",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "47306034-78fc-4767-bfd9-25e78825b985",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/regions/:regionId/properties?since=keys&count=500",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"regions",
+						":regionId",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "regionId",
+							"value": "44",
+							"description": "* Идентификатор региона",
+							"disabled": true
+						},
+						{
+							"key": "since",
+							"value": "keys"
+						},
+						{
+							"key": "count",
+							"value": "500"
+						}
+					],
+					"variable": [
+						{
+							"key": "regionId",
+							"value": "71"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CityId properties",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-API-KEY",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "47306034-78fc-4767-bfd9-25e78825b985",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/cities/:cityId/properties?since=keys&count=500",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"cities",
+						":cityId",
+						"properties"
+					],
+					"query": [
+						{
+							"key": "cityId",
+							"value": "1",
+							"description": "* Идентификатор города",
+							"disabled": true
+						},
+						{
+							"key": "since",
+							"value": "keys"
+						},
+						{
+							"key": "count",
+							"value": "500"
+						}
+					],
+					"variable": [
+						{
+							"key": "cityId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Countries",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-API-KEY",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "47306034-78fc-4767-bfd9-25e78825b985",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/countries",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Countries Region",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-API-KEY",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "47306034-78fc-4767-bfd9-25e78825b985",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/countries/:countryCode/regions",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"countries",
+						":countryCode",
+						"regions"
+					],
+					"variable": [
+						{
+							"key": "countryCode",
+							"value": "UKR",
+							"description": "* Трехбуквенный идентификатор страны"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Countries Cities",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-API-KEY",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "47306034-78fc-4767-bfd9-25e78825b985",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/countries/:countryCode/cities",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"countries",
+						":countryCode",
+						"cities"
+					],
+					"variable": [
+						{
+							"key": "countryCode",
+							"value": "RUS",
+							"description": "* Трехбуквенный идентификатор страны"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

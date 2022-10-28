@@ -1,0 +1,52 @@
+CityId properties
+
+Описание:
+	Поиск средств размещений по городу
+	Проверка недопустимых значений
+
+Входные параметры:
+	cityId = 0 или 100 или Томск
+	since = abcde
+	count = 0 или 501
+
+Ожидаемый результат:
+	Отображение ошибки с уведомлением `IncorrectRequest`
+
+Фактический результат:
+	curl -X 'GET' \
+	  'https://partner.qatl.ru/api/geo/v1/regions/0/properties?count=500' \
+	  -H 'accept: application/json' \
+	  -H 'X-API-KEY: 47306034-78fc-4767-bfd9-25e78825b985'
+  
+  Ответ:
+	Code 200.
+		{
+			"next": null,
+			"properties": []
+		}
+	
+
+	Error: response status is 400
+	{
+	  "errors": [
+		{
+		  "code": "IncorrectRequest",
+		  "message": "Invalid since abcde"
+		}
+	  ]
+	}
+	
+	Error: response status is 400
+	{
+	  "errors": [
+		{
+		  "code": "IncorrectRequest",
+		  "message": "Invalid count 0, max: 500, min: 1"
+		}
+	  ]
+	}
+	
+Вывод:
+	При недопустимом значеним параметра cityId запрос должен отображать ошибку `IncorrectRequest`, но не отображает ее.
+	При недопустимом значеним параметров since или count запрос отображет ошибку с уведомлением `IncorrectRequest` и указанием на тот параметр, 
+		который введен с некоректным значением.

@@ -1,0 +1,51 @@
+Countries Region
+
+Описание:
+	Получить список всех регионов страны
+	Проверка недопустимых значений
+
+Входные параметры:
+	countryCode = 0 или Россия или qwerty
+
+Ожидаемый результат:
+	Отображение ошибки с уведомлением `IncorrectRequest`
+
+Фактический результат:
+	curl -X 'GET' \
+	  'https://partner.qatl.ru/api/geo/v1/countries/qwerty/regions' \
+	  -H 'accept: application/json' \
+	  -H 'X-API-KEY: 47306034-78fc-4767-bfd9-25e78825b985'
+  
+  Ответ:
+	Error: response status is 400
+	{
+		"errors": [
+			{
+				"code": "IncorrectRequest",
+				"message": "Country: qwerty is invalid"
+			}
+		]
+	}
+
+	Error: response status is 400
+	{
+		"errors": [
+			{
+				"code": "IncorrectRequest",
+				"message": "Country: 0 is invalid"
+			}
+		]
+	}
+	
+	Error: response status is 400
+	{
+		"errors": [
+			{
+				"code": "IncorrectRequest",
+				"message": "Country: Россия is invalid"
+			}
+		]
+	}
+	
+Вывод:
+	При недопустимом значении параметра countryCode запрос отображет ошибку с уведомлением `IncorrectRequest` и указанием некоректное значение.

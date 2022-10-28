@@ -1,0 +1,1144 @@
+Countries Cities
+
+Описание:
+	Получить список всех городов страны
+	Проверка данных в ответе
+	
+Входные параметры:
+	countryCode = RUS
+
+Ожидаемый результат:
+	{
+	  "cities": [
+		{
+		  "id": "1",
+		  "name": "Йошкар-Ола г.",
+		  "regionId": "44",
+		  "countryCode": "RUS"
+		}
+	  ]
+	}
+
+Фактический результат:
+	curl -X 'GET' \
+	  'https://partner.qatl.ru/api/geo/v1/countries/RUS/cities' \
+	  -H 'accept: application/json' \
+	  -H 'X-API-KEY: 47306034-78fc-4767-bfd9-25e78825b985'
+
+  Ответ:
+	{
+		"cities": [
+			{
+				"id": "30515",
+				"name": "Анадырь",
+				"regionId": "83",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30514",
+				"name": "Биробиджан",
+				"regionId": "82",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30513",
+				"name": "Благовещенск",
+				"regionId": "78",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30512",
+				"name": "Чита",
+				"regionId": "74",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30511",
+				"name": "Якутск",
+				"regionId": "75",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30510",
+				"name": "Улан-Удэ",
+				"regionId": "64",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30505",
+				"name": "Морки",
+				"regionId": "44",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30489",
+				"name": "Тест",
+				"regionId": "215",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30487",
+				"name": "Новый Уренгой",
+				"regionId": "62",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30486",
+				"name": "Трудобеликовский",
+				"regionId": "32",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30485",
+				"name": "Васильевское",
+				"regionId": "44",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30484",
+				"name": "Сернур",
+				"regionId": "44",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30483",
+				"name": "Репино",
+				"regionId": "28",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30482",
+				"name": "Колпино",
+				"regionId": "28",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30481",
+				"name": "Балашиха",
+				"regionId": "18",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30447",
+				"name": "Красноярск",
+				"regionId": "68",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30445",
+				"name": "Астрахань",
+				"regionId": "33",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30444",
+				"name": "Владикавказ",
+				"regionId": "40",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30443",
+				"name": "Петропавловск-Камчатский",
+				"regionId": "76",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30442",
+				"name": "Петропавловск-Камчатский",
+				"regionId": "79",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30438",
+				"name": "Санкт-Петербург",
+				"regionId": "28",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30435",
+				"name": "Брянск",
+				"regionId": "2",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30434",
+				"name": "Иваново",
+				"regionId": "5",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30433",
+				"name": "Килемары",
+				"regionId": "44",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30432",
+				"name": "Яранск",
+				"regionId": "49",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "357",
+				"name": "Петрово",
+				"regionId": "10",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "356",
+				"name": "Анапа",
+				"regionId": "32",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "193",
+				"name": "Ильинка",
+				"regionId": "44",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "187",
+				"name": "Нижневартовск",
+				"regionId": "61",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "182",
+				"name": "Волжск",
+				"regionId": "44",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "181",
+				"name": "Новокузнецк",
+				"regionId": "70",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "178",
+				"name": "Магадан",
+				"regionId": "80",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "177",
+				"name": "Клинцы",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "176",
+				"name": "Ноябрьск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "175",
+				"name": "Иркутск",
+				"regionId": "69",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "174",
+				"name": "Иркутская область",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "173",
+				"name": "Зеленогорск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "172",
+				"name": "Шахты",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "171",
+				"name": "Воркута",
+				"regionId": "20",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "169",
+				"name": "Крутинка",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "168",
+				"name": "Омская область",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "167",
+				"name": "Пятигорск",
+				"regionId": "42",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "165",
+				"name": "Новый Уренгой",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "164",
+				"name": "Шуя",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "163",
+				"name": "Ивановская область",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "162",
+				"name": "Тобольск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "161",
+				"name": "Самарская область",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "159",
+				"name": "Железноводск",
+				"regionId": "42",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "158",
+				"name": "Смоленск",
+				"regionId": "13",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "157",
+				"name": "Абакан",
+				"regionId": "66",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "154",
+				"name": "Приморский край",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "153",
+				"name": "Республика Башкортостан",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "152",
+				"name": "Карачаево-Черкесская Республика",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "151",
+				"name": "Вышний Волочек",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "150",
+				"name": "Александров",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "149",
+				"name": "Минеральные воды",
+				"regionId": "42",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "148",
+				"name": "Нальчик",
+				"regionId": "38",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "147",
+				"name": "Армавир",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "146",
+				"name": "Хабаровск",
+				"regionId": "77",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "145",
+				"name": "Чита",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "143",
+				"name": "Вологда",
+				"regionId": "22",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "142",
+				"name": "Белорецк",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "139",
+				"name": "Ленинградская область",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "138",
+				"name": "Находка",
+				"regionId": "76",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "137",
+				"name": "Омск",
+				"regionId": "72",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "136",
+				"name": "Пензенская область",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "135",
+				"name": "Кемерово",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "134",
+				"name": "Старая Русса",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "133",
+				"name": "Уссурийск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "132",
+				"name": "Адлер",
+				"regionId": "32",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "131",
+				"name": "Калуга",
+				"regionId": "6",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "129",
+				"name": "Курган",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "127",
+				"name": "Светлогорск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "126",
+				"name": "Карачаево Черкесская Республика",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "124",
+				"name": "Знаменск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "123",
+				"name": "Балтийск",
+				"regionId": "23",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "122",
+				"name": "Горный Алтай",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "121",
+				"name": "Кабардино-Балкарская республика",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "120",
+				"name": "Волжский",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "119",
+				"name": "Норильск",
+				"regionId": "68",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "118",
+				"name": "Псков",
+				"regionId": "27",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "115",
+				"name": "Балашиха",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "114",
+				"name": "Тульская область",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "112",
+				"name": "Обь",
+				"regionId": "71",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "111",
+				"name": "Ставрополь",
+				"regionId": "42",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "110",
+				"name": "Петергоф",
+				"regionId": "24",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "109",
+				"name": "Ижевск",
+				"regionId": "47",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "108",
+				"name": "Протвино",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "107",
+				"name": "Тверская область",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "106",
+				"name": "Новосибирск",
+				"regionId": "71",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "105",
+				"name": "Мирный",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "104",
+				"name": "Кисловодск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "103",
+				"name": "Красноярск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "102",
+				"name": "Переславль-Залесский",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "101",
+				"name": "Старый Оскол",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "100",
+				"name": "Елабуга",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "99",
+				"name": "Владивосток",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "98",
+				"name": "Курск",
+				"regionId": "8",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "97",
+				"name": "Петропавловск-Камчатский",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "96",
+				"name": "Стерлитамак",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "95",
+				"name": "Тула",
+				"regionId": "16",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "94",
+				"name": "Сыктывкар",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "93",
+				"name": "Владимирская область",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "92",
+				"name": "Городец",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "91",
+				"name": "Новороссийск",
+				"regionId": "32",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "90",
+				"name": "Королев",
+				"regionId": "10",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "89",
+				"name": "Томск",
+				"regionId": "73",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "88",
+				"name": "Республика Алтай",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "87",
+				"name": "Улан-Удэ",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "86",
+				"name": "Южно-Сахалинск",
+				"regionId": "81",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "85",
+				"name": "Белокуриха",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "84",
+				"name": "Коломна",
+				"regionId": "10",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "83",
+				"name": "Нижегородская область",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "82",
+				"name": "Волгоград",
+				"regionId": "34",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "81",
+				"name": "Подольск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "79",
+				"name": "Усть-Качка",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "78",
+				"name": "Рязань",
+				"regionId": "12",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "77",
+				"name": "Московская область",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "76",
+				"name": "Дмитров",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "75",
+				"name": "Боровичи",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "74",
+				"name": "Азов",
+				"regionId": "35",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "73",
+				"name": "Пермь",
+				"regionId": "53",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "72",
+				"name": "Белгород",
+				"regionId": "1",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "71",
+				"name": "Ростов-на-Дону",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "70",
+				"name": "Ессентуки",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "69",
+				"name": "Великий Новгород",
+				"regionId": "26",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "68",
+				"name": "Тамбов",
+				"regionId": "14",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "67",
+				"name": "Воронеж",
+				"regionId": "4",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "66",
+				"name": "Сергиев Посад",
+				"regionId": "10",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "65",
+				"name": "Сызрань",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "64",
+				"name": "Балаково",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "63",
+				"name": "Саратов",
+				"regionId": "55",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "62",
+				"name": "Пенза",
+				"regionId": "52",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "61",
+				"name": "Чебоксары",
+				"regionId": "48",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "55",
+				"name": "Ярославль",
+				"regionId": "17",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "54",
+				"name": "Кострома",
+				"regionId": "7",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "53",
+				"name": "Республика Марий Эл",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "51",
+				"name": "Астрахань",
+				"regionId": "33",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "50",
+				"name": "Челябинск",
+				"regionId": "60",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "49",
+				"name": "Орёл",
+				"regionId": "11",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "47",
+				"name": "Суздаль",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "46",
+				"name": "Туапсе",
+				"regionId": "32",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "45",
+				"name": "Владимир",
+				"regionId": "3",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "44",
+				"name": "Екатеринбург",
+				"regionId": "58",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "43",
+				"name": "Мамадыш",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "42",
+				"name": "Болгар",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "41",
+				"name": "Уфа",
+				"regionId": "43",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "39",
+				"name": "Горно-Алтайск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "38",
+				"name": "Барнаул",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "37",
+				"name": "Елец",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "36",
+				"name": "Углич",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "35",
+				"name": "Петрозаводск",
+				"regionId": "19",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "34",
+				"name": "Ростов",
+				"regionId": "17",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "33",
+				"name": "Набережные Челны",
+				"regionId": "46",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "32",
+				"name": "Киров",
+				"regionId": "49",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "31",
+				"name": "Саранск",
+				"regionId": "45",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "30",
+				"name": "Валдай",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "29",
+				"name": "Якутск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "28",
+				"name": "Ульяновск",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "27",
+				"name": "Самара",
+				"regionId": "54",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "26",
+				"name": "Липецк",
+				"regionId": "9",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "25",
+				"name": "Калининград",
+				"regionId": "23",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "24",
+				"name": "Сочи",
+				"regionId": "32",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "23",
+				"name": "Тюмень",
+				"regionId": "59",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "20",
+				"name": "Истра",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "19",
+				"name": "Бекасово",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "18",
+				"name": "Выборг",
+				"regionId": "24",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "17",
+				"name": "Геленджик",
+				"regionId": "32",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "16",
+				"name": "Краснодар",
+				"regionId": "32",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "15",
+				"name": "Тольятти",
+				"regionId": "54",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "14",
+				"name": "Анапа",
+				"regionId": "32",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "13",
+				"name": "Таганрог",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "12",
+				"name": "Краснодарский край",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "11",
+				"name": "Нижний Новгород",
+				"regionId": "50",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "10",
+				"name": "Казань",
+				"regionId": "46",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "9",
+				"name": "Тверь",
+				"regionId": "15",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "8",
+				"name": "Москва",
+				"regionId": "18",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "7",
+				"name": "Иваново",
+				"regionId": "172",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "6",
+				"name": "Санкт-Петербург",
+				"regionId": "28",
+				"countryCode": "RUS"
+			},
+			{
+				"id": "1",
+				"name": "Йошкар-Ола",
+				"regionId": "44",
+				"countryCode": "RUS"
+			}
+		]
+	}
+
+Вывод:
+	1. При допустимых значениях параметров ответ содержит не только города. Например:
+		{
+            "id": "154",
+            "name": "Приморский край",
+            "regionId": "172",
+            "countryCode": "RUS"
+        },
+        {
+            "id": "153",
+            "name": "Республика Башкортостан",
+            "regionId": "172",
+            "countryCode": "RUS"
+        },
+        {
+            "id": "152",
+            "name": "Карачаево-Черкесская Республика",
+            "regionId": "172",
+            "countryCode": "RUS"
+        },
+	
+	2. При допустимых значениях значение regionId не соответствует действительным. Например:
+		В городе Абакан regionId = 19 
+		В ответе:
+			{
+				"id": "157",
+				"name": "Абакан",
+				"regionId": "66",
+				"countryCode": "RUS"
+			},
+		

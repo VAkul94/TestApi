@@ -1,0 +1,40 @@
+Countries properties
+
+Описание:
+	Поиск средств размещений по стране
+	Проверка значений параметра countryCode
+
+Входные параметры:
+	countryCode = USA или UKR или POL (Лююой Трехбуквенный идентификатор страны кроме России)
+
+Ожидаемый результат:
+	{
+	  "next": null,
+	  "properties": [
+		{
+		  "id": "1024",
+		  "name": "Тестовая гостиница Travelline",
+		  "cityId": "18",
+		  "regionId": "18",
+		  "countryCode": "RUS",
+		  "longitude": 47.8772,
+		  "latitude": 56.637028
+		}
+	  ]
+	}
+
+Фактический результат:
+	curl -X 'GET' \
+  'https://partner.qatl.ru/api/geo/v1/countries/USA/properties' \
+  -H 'accept: application/json' \
+  -H 'X-API-KEY: 47306034-78fc-4767-bfd9-25e78825b985'
+  
+Ответ:
+	{
+	  "next": null,
+	  "properties": []
+	}
+
+
+Вывод:
+	При указании любой страны кроме России возвращается ответ с пустыми `propoerties`, чего быть не должно.

@@ -1,0 +1,69 @@
+RegionId properties
+
+Описание:
+	Поиск средств размещений по региону
+	Проверка допустимых значиений в параметрах
+
+Входные параметры:
+	regionId = 44
+	since = keys
+	count = 500
+
+Ожидаемый результат:
+	{
+	  "next": null,
+	  "properties": [
+		{
+		  "id": "1024",
+		  "name": "Тестовая гостиница Travelline",
+		  "cityId": "18",
+		  "regionId": "18",
+		  "countryCode": "RUS",
+		  "longitude": 47.8772,
+		  "latitude": 56.637028
+		}
+	  ]
+	}
+
+Фактический результат:
+	curl -X 'GET' \
+	  'https://partner.qatl.ru/api/geo/v1/regions/44/properties?count=500' \
+	  -H 'accept: application/json' \
+	  -H 'X-API-KEY: 47306034-78fc-4767-bfd9-25e78825b985'
+  
+  Ответ:
+	{
+		"next": null,
+		"properties": [
+			{
+				"id": "7820",
+				"name": "[AutoTest] Partner Api",
+				"cityId": "1",
+				"regionId": "44",
+				"countryCode": "RUS",
+				"longitude": -0.155,
+				"latitude": 51.5207
+			},
+			{
+				"id": "8868",
+				"name": "PartnerAPI 13",
+				"cityId": "1",
+				"regionId": "44",
+				"countryCode": "RUS",
+				"longitude": 47.872237,
+				"latitude": 56.639254
+			},
+			{
+				"id": "5019",
+				"name": "TravelLine TEST_channel manager",
+				"cityId": "1",
+				"regionId": "44",
+				"countryCode": "RUS",
+				"longitude": 34.363731,
+				"latitude": 53.243325
+			}
+		]
+	}
+
+Вывод:
+	При допустимых значениях параметров запрос работает без ошибок.

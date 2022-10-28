@@ -1,0 +1,77 @@
+Countries Cities
+
+Описание:
+	Получить список всех городов страны
+	Проверка допустимых значиений в параметрах
+
+Входные параметры:
+	countryCode = RUS или USA или UKR
+
+Ожидаемый результат:
+	{
+	  "cities": [
+		{
+		  "id": "1",
+		  "name": "Йошкар-Ола г.",
+		  "regionId": "44",
+		  "countryCode": "RUS"
+		}
+	  ]
+	}
+
+Фактический результат:
+	curl -X 'GET' \
+	  'https://partner.qatl.ru/api/geo/v1/countries/UKR/cities' \
+	  -H 'accept: application/json' \
+	  -H 'X-API-KEY: 47306034-78fc-4767-bfd9-25e78825b985'
+	  
+  Ответ:
+	{
+	  "cities": [
+		{
+		  "id": "210",
+		  "name": "Днепропетровск",
+		  "regionId": "146",
+		  "countryCode": "UKR"
+		},
+		{
+		  "id": "192",
+		  "name": "Неизвестный",
+		  "regionId": "134",
+		  "countryCode": "UKR"
+		},
+		{
+		  "id": "191",
+		  "name": "Алушта",
+		  "regionId": "134",
+		  "countryCode": "UKR"
+		},
+		{
+		  "id": "190",
+		  "name": "Диканька",
+		  "regionId": "138",
+		  "countryCode": "UKR"
+		},
+		{
+		  "id": "189",
+		  "name": "Константиновка",
+		  "regionId": "136",
+		  "countryCode": "UKR"
+		},
+		{
+		  "id": "188",
+		  "name": "Мукачево",
+		  "regionId": "138",
+		  "countryCode": "UKR"
+		},
+		{
+		  "id": "22",
+		  "name": "Киев",
+		  "regionId": "134",
+		  "countryCode": "UKR"
+		}
+	  ]
+	}
+
+Вывод:
+	При допустимых значениях параметров запрос работает без ошибок.

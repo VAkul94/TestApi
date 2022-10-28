@@ -1,0 +1,220 @@
+Countries properties
+
+Описание:
+	Поиск средств размещений по стране
+	Проверка ответа при отсутствии необязательных параметров
+
+Входные параметры:
+	countryCode = RUS
+
+Ожидаемый результат:
+	{
+	  "next": null,
+	  "properties": [
+		{
+		  "id": "1024",
+		  "name": "Тестовая гостиница Travelline",
+		  "cityId": "18",
+		  "regionId": "18",
+		  "countryCode": "RUS",
+		  "longitude": 47.8772,
+		  "latitude": 56.637028
+		}
+	  ]
+	}
+
+Фактический результат:
+	curl -X 'GET' \
+  'https://partner.qatl.ru/api/geo/v1/countries/RUS/properties' \
+  -H 'accept: application/json' \
+  -H 'X-API-KEY: 47306034-78fc-4767-bfd9-25e78825b985'
+  
+Ответ:
+	{
+	  "next": null,
+	  "properties": [
+		{
+		  "id": "8156",
+		  "name": "PartnerAPI c WebPMS",
+		  "cityId": "16",
+		  "regionId": "32",
+		  "countryCode": "RUS",
+		  "longitude": 38.924501,
+		  "latitude": 45.117204
+		},
+		{
+		  "id": "7820",
+		  "name": "[AutoTest] Partner Api",
+		  "cityId": "1",
+		  "regionId": "44",
+		  "countryCode": "RUS",
+		  "longitude": -0.155,
+		  "latitude": 51.5207
+		},
+		{
+		  "id": "8613",
+		  "name": "PartnerAPI для интеграции 4",
+		  "cityId": "8",
+		  "regionId": "18",
+		  "countryCode": "RUS",
+		  "longitude": null,
+		  "latitude": null
+		},
+		{
+		  "id": "8614",
+		  "name": "PartnerAPI для интеграции 4",
+		  "cityId": "95",
+		  "regionId": "16",
+		  "countryCode": "RUS",
+		  "longitude": null,
+		  "latitude": null
+		},
+		{
+		  "id": "8615",
+		  "name": "PartnerAPI Отель без квоты",
+		  "cityId": "8",
+		  "regionId": "18",
+		  "countryCode": "RUS",
+		  "longitude": null,
+		  "latitude": null
+		},
+		{
+		  "id": "8616",
+		  "name": "PartnerAPI для интеграции 6",
+		  "cityId": "106",
+		  "regionId": "71",
+		  "countryCode": "RUS",
+		  "longitude": 82.917516,
+		  "latitude": 55.029618
+		},
+		{
+		  "id": "8617",
+		  "name": "PartnerAPI для интеграции 7",
+		  "cityId": "6",
+		  "regionId": "28",
+		  "countryCode": "RUS",
+		  "longitude": 30.309414,
+		  "latitude": 59.935963
+		},
+		{
+		  "id": "8618",
+		  "name": "PartnerAPI для интеграции 8",
+		  "cityId": "171",
+		  "regionId": "20",
+		  "countryCode": "RUS",
+		  "longitude": 53.680506,
+		  "latitude": 63.563026
+		},
+		{
+		  "id": "8619",
+		  "name": "PartnerAPI для интеграции 9",
+		  "cityId": "16",
+		  "regionId": "32",
+		  "countryCode": "RUS",
+		  "longitude": null,
+		  "latitude": null
+		},
+		{
+		  "id": "8746",
+		  "name": "PartnerAPI для интеграции 12",
+		  "cityId": "84",
+		  "regionId": "10",
+		  "countryCode": "RUS",
+		  "longitude": 85.94029,
+		  "latitude": 51.956791
+		},
+		{
+		  "id": "8866",
+		  "name": "PartnerAPI 11",
+		  "cityId": "106",
+		  "regionId": "71",
+		  "countryCode": "RUS",
+		  "longitude": 82.89651,
+		  "latitude": 54.983619
+		},
+		{
+		  "id": "8726",
+		  "name": "PartnerAPI для интеграции 10",
+		  "cityId": "8",
+		  "regionId": "18",
+		  "countryCode": "RUS",
+		  "longitude": 37.593333,
+		  "latitude": 55.768337
+		},
+		{
+		  "id": "8745",
+		  "name": "PartnerAPI для интеграции 11",
+		  "cityId": "66",
+		  "regionId": "10",
+		  "countryCode": "RUS",
+		  "longitude": null,
+		  "latitude": null
+		},
+		{
+		  "id": "8865",
+		  "name": "PartnerAPI 10",
+		  "cityId": "24",
+		  "regionId": "32",
+		  "countryCode": "RUS",
+		  "longitude": 39.73193,
+		  "latitude": 43.570503
+		},
+		{
+		  "id": "8867",
+		  "name": "PartnerAPI 12",
+		  "cityId": "16",
+		  "regionId": "32",
+		  "countryCode": "RUS",
+		  "longitude": 38.978691,
+		  "latitude": 45.029738
+		},
+		{
+		  "id": "8868",
+		  "name": "PartnerAPI 13",
+		  "cityId": "1",
+		  "regionId": "44",
+		  "countryCode": "RUS",
+		  "longitude": 47.872237,
+		  "latitude": 56.639254
+		},
+		{
+		  "id": "7291",
+		  "name": "PartnerAPI для интеграции",
+		  "cityId": "51",
+		  "regionId": "33",
+		  "countryCode": "RUS",
+		  "longitude": 48.0449931,
+		  "latitude": 46.3490505
+		},
+		{
+		  "id": "7292",
+		  "name": "[Autotest] [PartnerAPI] BookingProcess",
+		  "cityId": "51",
+		  "regionId": "33",
+		  "countryCode": "RUS",
+		  "longitude": 48.0428603,
+		  "latitude": 46.3726257
+		},
+		{
+		  "id": "8155",
+		  "name": "PartnerAPI для интеграции 2",
+		  "cityId": "16",
+		  "regionId": "32",
+		  "countryCode": "RUS",
+		  "longitude": 38.973696,
+		  "latitude": 45.036738
+		},
+		{
+		  "id": "5019",
+		  "name": "TravelLine TEST_channel manager",
+		  "cityId": "1",
+		  "regionId": "44",
+		  "countryCode": "RUS",
+		  "longitude": 34.363731,
+		  "latitude": 53.243325
+		}
+	  ]
+	}
+  
+Вывод:
+	При отсутствии необязательных параметров запрос отрабатывает успешно.

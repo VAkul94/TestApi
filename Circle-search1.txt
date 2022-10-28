@@ -1,0 +1,53 @@
+Circle-search
+
+Описание:
+	Поиск средств размещений по окружности
+	Проверка допустимых значиений в параметрах
+
+Входные параметры:
+	latitude = 56.637028
+	longitude = 47.8772
+	radius = 10000
+	since = keys
+	count = 500
+
+Ожидаемый результат:
+	{
+		"next": null,
+		"properties": [
+		{
+		  "id": "1024",
+		  "name": "Тестовая гостиница Travelline",
+		  "cityId": "18",
+		  "regionId": "18",
+		  "countryCode": "RUS",
+		  "longitude": 47.8772,
+		  "latitude": 56.637028
+		}
+	  ]
+	}
+
+Фактический результат:
+	curl -X 'GET' \
+  'https://partner.qatl.ru/api/geo/v1/properties/circle-search?latitude=56.637028&longitude=47.8772&radius=10000&count=500' \
+  -H 'accept: application/json' \
+  -H 'X-API-KEY: 47306034-78fc-4767-bfd9-25e78825b985'
+  
+  Ответ:
+  {
+    "next": null,
+    "properties": [
+        {
+            "id": "8868",
+            "name": "PartnerAPI 13",
+            "cityId": "1",
+            "regionId": "44",
+            "countryCode": "RUS",
+            "longitude": 47.872237,
+            "latitude": 56.639254
+        }
+    ]
+}
+
+Вывод:
+	При допустимых значениях параметров запрос работает без ошибок.

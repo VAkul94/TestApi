@@ -1,0 +1,41 @@
+Countries properties
+
+Описание:
+	Поиск средств размещений по стране
+	Проверка недопустимых значений
+
+Входные параметры:
+	countryCode = qwerty
+	since = abcde
+	count = 501
+
+Ожидаемый результат:
+	Отображение ошибки с уведомлением `IncorrectRequest`
+
+Фактический результат:
+	curl -X 'GET' \
+  'https://partner.qatl.ru/api/geo/v1/countries/Kassa/properties?since=abcde&count=500' \
+  -H 'accept: application/json' \
+  -H 'X-API-KEY: 47306034-78fc-4767-bfd9-25e78825b985'
+  
+  Ответ:
+	Code 200.
+		{
+			"next": null,
+			"properties": []
+		}
+	
+
+	Error: response status is 400
+	{
+	  "errors": [
+		{
+		  "code": "IncorrectRequest",
+		  "message": "Invalid since abcde"
+		}
+	  ]
+	}
+	
+Вывод:
+	При недопустимом значеним параметра countryCode запрос должен отображать ошибку `IncorrectRequest`, но не отображает ее.
+	При недопустимом значеним параметров since или count запрос отображет ошибку с уведомлением `IncorrectRequest`.

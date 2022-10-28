@@ -1,0 +1,64 @@
+Countries Region
+
+Описание:
+	Получить список всех регионов страны
+	Проверка допустимых значиений в параметрах
+
+Входные параметры:
+	countryCode = RUS или USA или UKR
+
+Ожидаемый результат:
+	{
+	  "regions": [
+		{
+		  "id": "44",
+		  "name": "Республика Марий Эл",
+		  "countryCode": "RUS"
+		}
+	  ]
+	}
+
+Фактический результат:
+	curl -X 'GET' \
+	  'https://partner.qatl.ru/api/geo/v1/countries/UKR/regions' \
+	  -H 'accept: application/json' \
+	  -H 'X-API-KEY: 47306034-78fc-4767-bfd9-25e78825b985'
+	  
+  Ответ:
+	{
+	  "regions": [
+		{
+		  "id": "134",
+		  "name": "Киевская область",
+		  "countryCode": "UKR"
+		},
+		{
+		  "id": "135",
+		  "name": "Донецкая область",
+		  "countryCode": "UKR"
+		},
+		{
+		  "id": "136",
+		  "name": "Запорожье",
+		  "countryCode": "UKR"
+		},
+		{
+		  "id": "137",
+		  "name": "Харьковская область",
+		  "countryCode": "UKR"
+		},
+		{
+		  "id": "138",
+		  "name": "Закарпатская область",
+		  "countryCode": "UKR"
+		},
+		{
+		  "id": "146",
+		  "name": "Днепропетровская область",
+		  "countryCode": "UKR"
+		}
+	  ]
+	}
+
+Вывод:
+	При допустимых значениях параметров запрос работает без ошибок.
